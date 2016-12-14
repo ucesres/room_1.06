@@ -1,0 +1,49 @@
+<html lang="en">
+
+<head>
+<title>Monitored data from Room 1.06</title>
+<link rel="stylesheet" type= "text/css" href="styles/global.css" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+<script type="text/javascript" src="scripts/jquery.js"></script>
+
+</head>
+
+<body>
+
+	<div id = "header">
+		<div class = "logo"><a href ="#">Room 1.06 Monitor</a></div>
+	</div>
+	<div id="container">
+		<div class="sidebar">
+			<ul id="nav">
+				<li><a href="index.html">Current Conditions</a></li>
+				<li><a class ="selected" href="histograms.html">Historical Conditions</a></li>
+				<li><a href="timeseries.html">Timeseries - Inside</a></li>
+				<li><a href="timeseries1.html">Timeseries - Outside</a></li>
+				<li><a href="monitoring.html">Raspberry Pi</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<div id="box">
+				<div class="box-top">Humidity and Temperature</div>
+				<div class="box-panel-left">
+					<iframe width=100% height="400" frameborder="0" scrolling="no" src="histogram_humidity.html"></iframe>
+				</div>
+				<div class="box-panel-right">
+					<iframe width=100% height="400" frameborder="0" scrolling="no" src="histogram_temperature.html"></iframe>
+				</div>
+			</div>
+			<div id="box">
+				<div class="box-top">Lux and CO2</div>
+				<div class="box-panel-left">
+					<iframe width=100% height="400" frameborder="0" scrolling="no" src="histogram_lux.html"></iframe>
+				</div>
+				<div class="box-panel-right">
+					<iframe width=100% height="400" frameborder="0" scrolling="no" src="histogram_co2.html"></iframe>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

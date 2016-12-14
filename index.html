@@ -1,0 +1,107 @@
+
+<html lang="en">
+
+<head>
+<title>Monitored data from Room 1.06</title>
+<link rel="stylesheet" type= "text/css" href="styles/global.css" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+<script src="scripts/papaparse.js"></script>
+<script src="scripts/current_humidity.js"></script>
+</head>
+
+<body>
+	<div id = "header">
+		<div class = "logo"><a href ="#">Room 1.06 Monitor</a></div>
+	</div>
+	<div id="container">
+		<div class="sidebar">
+			<ul id="nav">
+				<li><a class ="selected" href="index.html">Current Conditions</a></li>
+				<li><a href="histograms.html">Historical Conditions</a></li>
+				<li><a href="timeseries.html">Timeseries - Inside</a></li>
+				<li><a href="timeseries1.html">Timeseries - Outside</a></li>
+				<li><a href="monitoring.html">Raspberry Pi</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<div id="box">
+				<div class="box-top">Current Internal Conditions</div>
+					<div class="box-b">Humidity</div>
+					<div class="box-b1"><p id="live-humid"></p></div>
+			</div>
+			<div id="box">
+					<div class="box-b1">Temperature</div>
+					<div class="box-b"><p id="live-temp"></p></div>
+			</div>
+			<div id="box">
+					<div class="box-b">Carbon Dioxide</div>
+					<div class="box-b1"><p id="live-co2"></p></div>
+			</div>
+			<div id="box">
+					<div class="box-b1">Lux</div>
+					<div class="box-b"><p id="live-lux"></p></div>
+			</div>
+					
+			<div id="box">
+				<div class="box-top">Current External Conditions</div>
+					<div class="box-b">Humidity</div>
+					<div class="box-b1"><p id="outside-humid"></p></div>
+			</div>
+			<div id="box">
+				<div class="box-b1">Temperature</div>
+				<div class="box-b"><p id="outside-temp"></p></div>
+			</div>
+			
+			<div id="box">
+				<div class="box-top">External Pollutant Concentrations - Index</div>
+					<div class="box-b"><p id="outside-no2-name"></p></div>
+					<div class="box-b1"><p id="outside-no2-index"></p><p id="outside-no2-band"></p></div>
+			</div>
+			<div id="box">
+				<div class="box-b1"><p id="outside-ozone-name"></p></div>
+				<div class="box-b"><p id="outside-ozone-index"></p><p id="outside-ozone-band"></p></div>
+			</div>
+			<div id="box">
+					<div class="box-b"><p id="outside-pm10-name"></p></div>
+					<div class="box-b1"><p id="outside-pm10-index"></p></p><p id="outside-pm10-band"></p></div>
+			</div>
+			<div id="box">
+				<div class="box-b1"><p id="outside-pm2.5-name"></p></div>
+				<div class="box-b"><p id="outside-pm2.5-index"></p><p id="outside-pm2.5-band"></p></div>
+			</div>
+			<div id="box">
+					<div class="box-b"><p id="outside-sulphur-name"></p></div>
+					<div class="box-b1"><p id="outside-sulphur-index"></p><p id="outside-sulphur-band"></p></div>
+			</div>
+			
+			<div id="box">
+				<div class="box-top">Internal Sensors Under Development</div>
+					<div class="box-b">Nitrogen Dioxide</div>
+					<div class="box-b1"></div>
+			</div>
+			<div id="box">
+					<div class="box-b1">Contaminant Levels</div>
+					<div class="box-b"></div>
+			</div>
+			<div id="box">
+					<div class="box-b">Carbon Monoxide</div>
+					<div class="box-b1"></div>
+			</div>
+			<div id="box">
+					<div class="box-b1">PM10 Particulate</div>
+					<div class="box-b"></div>
+			</div>
+			<div id="box">
+					<div class="box-b">Ultra Violet</div>
+					<div class="box-b1"></div>
+			</div>
+			
+		
+		</div>
+	</div>
+</body>
+
+</html>
+
+		
+

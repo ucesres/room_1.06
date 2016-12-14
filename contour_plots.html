@@ -1,0 +1,38 @@
+
+<html lang="en">
+
+<head>
+<title>Monitored data from Denmark Road</title>
+<link rel="stylesheet" type= "text/css" href="styles/global.css" />
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div id = "header">
+		<div class = "logo"><a href ="#">Denmark Road Monitor</a></div>
+	</div>
+	<div id="container">
+		<div class="sidebar">
+			<ul id="nav">
+				<li><a href="index.html">Current Conditions</a></li>
+				<li><a href="histograms.html">Historical Conditions</a></li>
+				<li><a class ="selected" href="contour_plots.html">Contour Plots</a></li>
+				<li><a href="d3_page.html">D3 dashboard</a></li>
+				<li><a href="#">Empty</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			<div id="box">
+				<div class="box-top">Humidity vs Temperature</div>
+				<div class="box-panel">
+					<iframe width="600" height="600" frameborder="0" scrolling="no" src="contour.html"></iframe>
+				</div>
+			</div>
+
+		</div>
+	</div>
+</body>
+
+</html>
