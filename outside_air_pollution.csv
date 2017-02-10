@@ -1,6 +1,6 @@
 ,name,index,band
 0,Nitrogen Dioxide,1,Low
 1,Ozone,1,Low
-2,PM10 Particulate,3,Low
-3,PM2.5 Particulate,4,Moderate
+2,PM10 Particulate,4,Moderate
+3,PM2.5 Particulate,5,Moderate
 4,Sulphur Dioxide,1,Low
